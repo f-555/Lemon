@@ -6,10 +6,13 @@ Network-wide DDoS (Distributed Denial-of-Service) detection enables early attack
 
 The folder structure is as follows:
 
-artifact
-├── controlplane                --Contains Lemon controller, attack traffic generation script, │                                                packet sending and routing control script, and per-flow │                                                measurement result analysis script.
-├── lemon_bmv2           --Contains Lemon's P4 source code and related components │                                                required to run in Bmv2.
-├── lemon_hardware      --Contains Lemon's P4 source code in Tofino1.
+artifact   
+├── controlplane            --Contains Lemon controller, attack traffic generation script,    
+│                                           packet sending and routing control script, and per-flow    
+│                                           measurement result analysis script.   
+├── lemon_bmv2           --Contains Lemon's P4 source code and related components    
+│                                           required to run in Bmv2.   
+├── lemon_hardware     --Contains Lemon's P4 source code in Tofino1.   
 └── README
 
 ## Start with Lemon
