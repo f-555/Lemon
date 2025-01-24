@@ -1,0 +1,97 @@
+{
+
+  "p4_src": "measurement.p4",
+  "switch": "simple_switch",
+  "compiler": "p4c",
+  "options": "--target bmv2 --arch v1model --std p4-16",
+  "switch_cli": "simple_switch_CLI",
+  "cli": true,
+  "pcap_dump": true,
+  "enable_log": false,
+  "cpu_port": true,
+
+  "topo_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.apptopo",
+    "object_name": "AppTopo"
+  },
+
+  "controller_module": null,
+  "topodb_module": {
+    "file_path": "",
+    "module_name": "p4utils.utils.topology",
+    "object_name": "Topology"
+  },
+
+  "mininet_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.net",
+    "object_name": "P4Mininet"
+  },
+
+  "topology": {
+    "default":{
+      "auto_gw_arp": true
+    },
+    "links": [
+        ["s01", "s03"],
+        ["s02", "s04"],
+        ["s03", "s04"],["s03", "s06"],["s03", "s07"],["s03", "s08"],
+        ["s04", "s05"],["s04", "s08"],
+        ["s06", "s12"],
+        ["s07", "s11"],
+        ["s08", "s09"],
+        ["s09", "s10"],
+        ["s10", "s14"],
+        ["s11", "s14"],
+        ["s12", "s13"],
+        ["s14", "s15"],["s14", "s19"],
+        ["s15", "s19"],
+        ["s16", "s17"],
+        ["s17", "s18"],
+        ["s18", "s19"],
+        ["s19", "s20"],
+        ["s20", "s21"],
+        ["s21", "s22"],["s21", "s23"],["s21", "s27"],
+        ["s23", "s24"],
+        ["s24", "s26"],
+        ["s25", "s28"],
+        ["s26", "s28"],
+        ["s27", "s28"]
+      ],
+      "hosts": {},
+      "switches": {
+        "s01": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s02": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s03": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s04": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s05": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s06": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s07": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s08": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s09": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s10": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s11": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s12": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s13": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s14": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s15": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s16": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s17": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s18": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s19": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s20": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s21": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s22": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s23": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s24": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s25": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s26": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s27": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},
+        "s28": {"cli_input": "s1-commands.txt", "p4_src": "measurement.p4", "cpu_port": true, "pcap_dump": true},    
+    }
+  }
+
+ 
+
+}

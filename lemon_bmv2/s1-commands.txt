@@ -1,0 +1,15 @@
+
+
+//creates a mirroring ID 100 to output port 5
+
+set_crc32_parameters calc 0x04c11db3 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_0 0x04c11db3 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_1 0x04c11dc3 0xffffffff 0xffffffff true true
+
+set_crc32_parameters calc_2 0xa4b13dc4 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_3 0xa4b13dc4 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_4 0xa4b13dc4 0xffffffff 0xffffffff true true
+
+set_crc32_parameters calc_5 0xe4c11da7 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_6 0xe4c11da7 0xffffffff 0xffffffff true true
+set_crc32_parameters calc_7 0xe4c11da7 0xffffffff 0xffffffff true true
