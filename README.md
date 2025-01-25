@@ -19,3 +19,10 @@ artifact
 
 Please install the corresponding dependencies and start lemon following the README in the corresponding folder of lemon_bmv2 and Lemon_hardware.
 
+## Dataset
+
+The background traffic comes from [MAWI Working Group Traffic Archive](https://mawi.wide.ad.jp/mawi/). The attack traffic generation tool can be found at `/controlplane/traffic_generation/`
+
+---
+
+If you have any further questions, please contact wuwenhao22s@ict.ac.cn.
