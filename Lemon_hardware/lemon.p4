@@ -8,24 +8,24 @@
 #include "common/util.p4"
 
 #define T1 16384
-#define T2 8192
+#define T2 4096
 #define T3 1024
 #define T4 256
 #define TH 256
 
 #define layer1_size_bit1 4194304
 #define layer2_size_bit1 2097152
-#define layer3_size_bit1 524288
-#define layer4_size_bit1 131072
+#define layer3_size_bit1 262144
+#define layer4_size_bit1 65536
 #define layer5_size_bit1 524288
 
-#define counter_size 131072
+#define counter_size 65536
 #define heavy_keeper 8192
 
 #define l1_bitmap 32w8
 #define l2_bitmap 32w32
-#define l3_bitmap 32w64
-#define l4_bitmap 32w64
+#define l3_bitmap 32w32
+#define l4_bitmap 32w32
 #define l5_bitmap 32w512
 
 #define TOPK_REG_SIZE 16
